@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Annotation Template</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bsbsbsbsbsbsbsbbs -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="annotation.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- profil icone -->
+  <div class="action">
+    <div class="profile" onclick="menuToggle();">
+      <img src="../Projets/profil.png" alt="">
+    </div>
+    <div class="menu">
+      <h3>XXXXX XXXXX</h3>
+      <ul>
+        <li><img src="../Projets/moncompte.png"><a href="../Profil/index.html">Mon compte</a></li>
+        <li><img src="../Projets/logout.png"><a href="#">Déconnexion</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Annotations -->
+  <form class="container-sm shadow p-3 bg-white rounded">
+    <h1 class="h3 mb-3 fw-normal">Annotation</h1>
+    <!-- Importer le fichier -->
+    <div class="input-group mb-3">
+
+      <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03"
+        aria-label="Upload">
+    </div>
+    <h3 style="text-align: left;">Titre du passage</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <!-- Question -->
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Votre question">
+      <label for="floatingInput">La question</label>
+    </div>
+    <!-- Reponse -->
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Votre réponse">
+      <label for="floatingInput">La réponse</label>
+    </div>
+    <!-- Boutton -->
+    <div class="boutton">
+      <button type="button" class="w-50 btn btn-outline-primary add">Ajouter annotation</button>
+      <p>ou</p>
+      <button type="button" class="w-50 btn btn-outline-dark delete">Supprimer le paragraphe</button>
+    </div>
+    <!-- Tableau -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Question</th>
+          <th style="width: 300px;" scope="col">Réponse</th>
+          <th style="width: 150px;" scope="col">Editer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">La première question</th>
+          <td>La réponse</td>
+          <td><button type="button" class="btn btn-outline-danger">Supprimer</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</body>
+
+</html>

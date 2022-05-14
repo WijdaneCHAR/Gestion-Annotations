@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Projets Template</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <link href="projets.css" rel="stylesheet">
+  <!-- ------------------------------------------- -->
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<body>
+  <!-- profil icone -->
+  <div class="action">
+    <div class="profile" onclick="menuToggle();">
+      <img src="profil.png" alt="">
+    </div>
+    <div class="menu">
+      <h3>XXXXX XXXXX</h3>
+      <ul>
+        <li><img src="moncompte.png"><a href="../Profil/index.html">Mon compte</a></li>
+        <li><img src="logout.png"><a href="#">Déconnexion</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Projets -->
+  <main class="form-projets shadow p-3 bg-white rounded">
+
+    <div class="d-grid gap-2">
+      <button type="button" class="w-100 btn btn-outline-primary mb-3">Termes Médicales</button>
+      <button type="button" class="w-100 btn btn-outline-primary mb-3">Projet 2</button>
+      <button type="button" class="w-100 btn btn-outline-primary mb-3">Projet 3</button>
+      <button style="text-align: center" type="button" class="w-100 btn btn-outline-primary mb-3">+ Ajouter</button>
+    </div>
+  </main>
+
+
+
+  <script>
+    function menuToggle() {
+      const toggleMenu = document.querySelector('.menu');
+      toggleMenu.classList.toggle('active')
+    }
+  </script>
+</body>
+
+</html>
